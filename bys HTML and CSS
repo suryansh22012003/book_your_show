@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       margin: 0;
@@ -17,11 +19,11 @@
       margin-top: 20px;
       margin-left: 30px;
       width: 200vh;
-      height: 300px;
+      height: 450px;
     }
     .carousel-item img{
       width: 200vh;
-      height: 300px;
+      height: 450px;
     }
     .navbar-brand{
       text-align: center;
@@ -33,15 +35,19 @@
       background-color: brown;
       color: aliceblue;
       height: 35px;
-      width: 150px;
+      width: 80px;
       margin-top: 2px;
     }
     .MY{
+      border-top: 1px dotted black;
       background-color: brown;
       color: azure;
       padding: 2px;
       border-radius: 8px;
       font-size: 20px;
+    }
+    .search-bar{
+      margin-top: 2px;
     }
     .form-control{
       width: 500px;
@@ -53,6 +59,57 @@
       display: flex;
       margin-left: 25vh;
     }
+    .cardlvl3{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 12vh;
+    }
+
+    .card11 .card12{
+      border-radius: 10px;
+      margin-top: 17vh;
+      border: 2px solid black;
+      height: 45vh;
+      width: 25vh;
+    }
+    .cardimg{
+      margin-top: 0vh;
+      height: 35vh;
+      width: 25vh;
+      border-radius: 10px;
+    }
+    .cardimg img{
+      border-radius: 10px;
+      border: 2px solid black;
+      height: 35vh;
+      width: 25vh;
+    }
+    .cardlikes{
+      background: black;
+      height: 40px;
+      width: 25vh;
+      padding-left: 6px;
+      padding-top: 10px;
+      z-index: 0;
+      margin-top: -14px;
+      border-radius: 10px;
+    }
+    .cardlikes span{
+      color: white;
+    }
+    .cardname{
+      font-weight: bolder;
+    }
+
+    .ad2lvl1{
+      margin-top: 10vh;
+      margin-left: 30vh;
+      width: 100vh;
+    }
+    .a1dlvl1 img{
+      width: 100vh;
+    }
+
    
   </style>
   <title>Document</title>
@@ -62,7 +119,7 @@
                              <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="">Book <span class="MY">MY</span> Show</a>
+      <a class="navbar-brand" href="">Book <span class="MY">my</span> Show</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,9 +149,9 @@
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li> -->
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-flex search-bar" role="search">
           <input class="form-control me-2" type="search" placeholder="Search for Movies Sports games Events Shows" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit" placeholder="Search">Search</button>
+          <button class="btn btn-outline-success" type="submit" placeholder="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div>
     </div>
@@ -144,7 +201,7 @@
 
                                 <!-- cards -->
 
-  <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+  <!-- <div class="row row-cols-1 row-cols-md-3 g-4 cards">
     <div class="col">
       <div class="card h-100">
         <img src="..." class="card-img-top" alt="...">
@@ -193,8 +250,92 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <div class="cardlvl1">
+    <div class="cardlvl2">
+      <div class="cardlvl3">
+        <div class="card11 mov1">
+          <div class="cardimg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSfGsh8pjXDq3-1tFwGxxNMIwJOlmrYFAcLA&usqp=CAU" alt="">
+          </div>
+          <div class="cardlikes">
+            <i class="fa-solid fa-thumbs-up" style="color: #f71d3a;"></i>
+            <span  >71.8K likes <i class="fa-solid fa-heart" style="color: #df2626;"></i></span>
+          </div>
+          <div class="cardname">
+            <Span>Spider-Man-No Way Home</Span>
+          </div>
+        </div>
+
+
+        <div class="card12 mov1">
+          <div class="cardimg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqjxZZ2n2cAU2lu5JhlcKQHzlQIUa9ULEqQg&usqp=CAU" alt="">
+          </div>
+          <div class="cardlikes">
+            <i class="fa-solid fa-thumbs-up" style="color: #f71d3a;"></i>
+            <span >37.8K likes <i class="fa-solid fa-heart" style="color: #df2626;"></i></span>
+          </div>
+          <div class="cardname">
+            <Span>Antman-Quantumania</Span>
+          </div>
+        </div>
+
+
+
+        <div class="card12 mov1">
+          <div class="cardimg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvW-S4snA8R0KgpkErherWrGE8GENyAmU_ow&usqp=CAU" alt="">
+          </div>
+          <div class="cardlikes">
+            <i class="fa-solid fa-thumbs-up" style="color: #f71d3a;"></i>
+            <span >227.8K likes <i class="fa-solid fa-heart" style="color: #df2626;"></i></span>
+          </div>
+          <div class="cardname">
+            <Span>Jawan</Span>
+          </div>
+        </div>
+
+
+
+
+        <div class="card12 mov1">
+          <div class="cardimg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCPRDUNcjCvFqVX6eUWIJjS-wL0TCPfeN5cQ&usqp=CAU" alt="">
+          </div>
+          <div class="cardlikes">
+            <i class="fa-solid fa-thumbs-up" style="color: #f71d3a;"></i>
+            <span >49.8K likes <i class="fa-solid fa-heart" style="color: #df2626;"></i></span>
+          </div>
+          <div class="cardname">
+            <Span>Bhola</Span>
+          </div>
+        </div>
+
+
+
+
+        <div class="card12 mov1">
+          <div class="cardimg">
+            <img src="https://m.media-amazon.com/images/I/71OLMNKaKEL.jpg" alt="">
+          </div>
+          <div class="cardlikes">
+            <i class="fa-solid fa-thumbs-up" style="color: #f71d3a;"></i>
+            <span >18K likes <i class="fa-solid fa-heart" style="color: #df2626;"></i></span>
+          </div>
+          <div class="cardname">
+            <Span>Guardians Of Galaxy-Vol 2</Span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
+
+  <div class="ad2lvl1">
+    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png" alt="">
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
